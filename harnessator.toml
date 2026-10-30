@@ -1,0 +1,110 @@
+# harnessator source manifest - registers this repository's components
+# (validate with: harnessator validate --check-paths harnessator.toml)
+kind = "source"
+schema = 1
+
+[package]
+  name = "superpowers"
+  description = "Jesse Vincent's (obra) superpowers skills - a pinned, byte-identical harnessator harvest of upstream v7.0.1. See README.md; content unmodified."
+  version = "7.0.1"
+  homepage = "https://github.com/obra/superpowers"
+  license = "MIT"
+
+[profiles]
+  [profiles.core]
+    skill = ["brainstorming", "systematic-debugging", "test-driven-development", "using-superpowers"]
+  [profiles.default]
+    skill = ["brainstorming", "diagnosing-superpowers", "dispatching-parallel-agents", "executing-plans", "finishing-a-development-branch", "receiving-code-review", "requesting-code-review", "subagent-driven-development", "systematic-debugging", "test-driven-development", "using-git-worktrees", "using-superpowers", "verification-before-completion", "writing-plans", "writing-skills"]
+
+[component]
+  [component.skill]
+    [component.skill.brainstorming]
+      path = "skills/brainstorming"
+      key = ""
+      description = "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a talk, a business, a renovation)."
+      always = false
+      origin = "harvested from https://github.com/obra/superpowers@2ce8aa15d05b:skills/brainstorming"
+    [component.skill.diagnosing-superpowers]
+      path = "skills/diagnosing-superpowers"
+      key = ""
+      description = "Use when a superpowers session went wrong and your human partner wants to know why — repeated work, ignored plans, stumbles, poor results, a skill that didn't fire, \"it took too long\", \"why is it so expensive\", \"what is it doing\" — or wants to build a bug report for the superpowers maintainers, for the current session or a past one identified by id or path, on any harness."
+      always = false
+      origin = "harvested from https://github.com/obra/superpowers@2ce8aa15d05b:skills/diagnosing-superpowers"
+    [component.skill.dispatching-parallel-agents]
+      path = "skills/dispatching-parallel-agents"
+      key = ""
+      description = "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies"
+      always = false
+      origin = "harvested from https://github.com/obra/superpowers@2ce8aa15d05b:skills/dispatching-parallel-agents"
+    [component.skill.executing-plans]
+      path = "skills/executing-plans"
+      key = ""
+      description = "Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution, or no subagent tool is available"
+      always = false
+      origin = "harvested from https://github.com/obra/superpowers@2ce8aa15d05b:skills/executing-plans"
+    [component.skill.finishing-a-development-branch]
+      path = "skills/finishing-a-development-branch"
+      key = ""
+      description = "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work"
+      always = false
+      origin = "harvested from https://github.com/obra/superpowers@2ce8aa15d05b:skills/finishing-a-development-branch"
+    [component.skill.receiving-code-review]
+      path = "skills/receiving-code-review"
+      key = ""
+      description = "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation"
+      always = false
+      origin = "harvested from https://github.com/obra/superpowers@2ce8aa15d05b:skills/receiving-code-review"
+    [component.skill.requesting-code-review]
+      path = "skills/requesting-code-review"
+      key = ""
+      description = "Use when completing tasks, implementing major features, or before merging to verify work meets requirements"
+      always = false
+      origin = "harvested from https://github.com/obra/superpowers@2ce8aa15d05b:skills/requesting-code-review"
+    [component.skill.subagent-driven-development]
+      path = "skills/subagent-driven-development"
+      key = ""
+      description = "Use when executing implementation plans with independent tasks in the current session"
+      always = false
+      origin = "harvested from https://github.com/obra/superpowers@2ce8aa15d05b:skills/subagent-driven-development"
+    [component.skill.systematic-debugging]
+      path = "skills/systematic-debugging"
+      key = ""
+      description = "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes"
+      always = false
+      origin = "harvested from https://github.com/obra/superpowers@2ce8aa15d05b:skills/systematic-debugging"
+    [component.skill.test-driven-development]
+      path = "skills/test-driven-development"
+      key = ""
+      description = "Use when implementing any feature or bugfix, before writing implementation code"
+      always = false
+      origin = "harvested from https://github.com/obra/superpowers@2ce8aa15d05b:skills/test-driven-development"
+    [component.skill.using-git-worktrees]
+      path = "skills/using-git-worktrees"
+      key = ""
+      description = "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback"
+      always = false
+      origin = "harvested from https://github.com/obra/superpowers@2ce8aa15d05b:skills/using-git-worktrees"
+    [component.skill.using-superpowers]
+      path = "skills/using-superpowers"
+      key = ""
+      description = "Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions"
+      always = false
+      origin = "harvested from https://github.com/obra/superpowers@2ce8aa15d05b:skills/using-superpowers"
+    [component.skill.verification-before-completion]
+      path = "skills/verification-before-completion"
+      key = ""
+      description = "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always"
+      always = false
+      origin = "harvested from https://github.com/obra/superpowers@2ce8aa15d05b:skills/verification-before-completion"
+    [component.skill.writing-plans]
+      path = "skills/writing-plans"
+      key = ""
+      description = "Use when you have a spec or requirements for a multi-step task, before touching code"
+      always = false
+      origin = "harvested from https://github.com/obra/superpowers@2ce8aa15d05b:skills/writing-plans"
+    [component.skill.writing-skills]
+      path = "skills/writing-skills"
+      key = ""
+      description = "Use when creating new skills, editing existing skills, or verifying skills work before deployment"
+      always = false
+      origin = "harvested from https://github.com/obra/superpowers@2ce8aa15d05b:skills/writing-skills"
